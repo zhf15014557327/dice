@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color:cyan;
+            perspective: 1100px;
+        }
+        .box{
+            width: 260px;
+            height: 260px;
+            position: relative;
+            margin: 300px auto;
+            border-radius: 20px;
+            transform-style: preserve-3d;
+            transition: all 50s ;
+            /* animation: xuanhuan 50s alternate initial; */
+           
+        }
+
+        ul {
+         
+            width: 260px;
+            height: 260px;
+            list-style: none;
+            border-radius: 10px;
+            box-sizing: border-box;
+            border: 1px solid #000000;
+            background-color: aliceblue;
+            position: absolute;
+            display: flex;
+
+        }
+     
+        li {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #000000;
+
+        }
+
+        #yi {
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #er {
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        #san {
+            justify-content: space-around;
+
+        }
+
+        #san li:nth-child(1) {
+            margin-top: 10px;
+        }
+
+        #san li:nth-child(2) {
+            align-self: center;
+        }
+
+        #san li:nth-child(3) {
+            align-self: flex-end;
+            margin-bottom: 10px;
+        }
+
+        #si {
+            justify-content: space-around;
+            display: flex;
+        }
+
+        #si div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            /* justify-content: space-around; */
+        }
+
+        #wu {
+            justify-content: space-around;
+            display: flex;
+        }
+
+        #wu div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        #liu {
+            justify-content: space-around;
+            display: flex;
+        }
+
+        #liu div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        ul:nth-child(6){
+            left: -260px;
+            transform: rotateY(90deg);
+            transform-origin: right;
+        }
+        ul:nth-child(5){
+            top: -260px;
+            transform: rotateX(-90deg);
+            transform-origin: bottom;
+        }
+        ul:nth-child(4){
+            right: -260px;
+            transform: rotateY(-90deg);
+            transform-origin: left;
+        }
+        ul:nth-child(3){
+            bottom: -260px;
+            transform: rotateX(90deg);
+            transform-origin: top;
+        }
+        ul:nth-child(2){
+            transform: translateZ(260px);
+        }
+        .box:hover{
+            transform: rotateX(3600deg) rotateY(3600deg);
+        }
+/* <!-- 
+        @keyframes xuanhuan{
+       from{
+
+       }
+       to{
+        transform: rotateX(3600deg) rotateY(3600deg);
+       }
+        } --> */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul id="yi">
+            <li></li>
+        </ul>
+        <ul id="er">
+            <li></li>
+            <li></li>
+        </ul>
+        <ul id="san">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul id="si">
+            <div>
+                <li></li>
+                <li></li>
+            </div>
+            <div>
+                <li></li>
+                <li></li>
+            </div>
+        </ul>
+        <ul id="wu">
+            <div>
+                <li></li>
+                <li></li>
+            </div>
+            <div>
+                <li></li>
+            </div>
+            <div>
+                <li></li>
+                <li></li>
+            </div>
+        </ul>
+        <ul id="liu">
+            <div>
+                <li></li>
+                <li></li>
+                <li></li>
+            </div>
+            <div>
+                <li></li>
+                <li></li>
+                <li></li>
+            </div>
+        </ul>
+    </div>
+
+</body>
+
+</html>
